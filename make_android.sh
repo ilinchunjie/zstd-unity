@@ -5,7 +5,7 @@ if [ -n "$ANDROID_NDK" ]; then
 elif [ -n "$ANDROID_NDK_HOME" ]; then
   export NDK=${ANDROID_NDK_HOME}
 else
-  export NDK=~/android-ndk-r16b
+  export NDK=/Volumes/linchunjie/android-support/android-ndk-r19c
 fi
 
 if [ ! -d "$NDK" ]; then
