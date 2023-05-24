@@ -1,7 +1,7 @@
-mkdir build_windows & pushd build_windows
+mkdir build-x64 & pushd build-x64
 cmake -G "Visual Studio 17 2022" ..
 popd
-cmake --build build_windows --config Release
-md Plugins\Win\x86_64
-copy /Y build_windows\Release\zstd.dll Plugins\Win\x86_64\zstd.dll
+cmake --build build-x64 --config Release
+md Plugins\Win\x64
+copy /Y build-x64\Release\zstd.dll Plugins\Win\x64\zstd.dll
 pause
