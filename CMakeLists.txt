@@ -68,8 +68,10 @@ set( ZSTD_SRC
 )
 
 set( ZSTD_CORE
-	zstd.c
+	zstd/lib/zstd.h
 )
+
+add_definitions(-DZSTD_DLL_EXPORT)
 
 macro(source_group_by_dir proj_dir source_files)
     if(MSVC OR APPLE)
